@@ -4,8 +4,12 @@ public class Ex08 {
 
 	public static void main(String[] args) {
 
-		int[] lottoNums = new int[6];
-		boolean chkDup = false;
+		//중복테스트
+		//int[] lottoNums = new int[] {1,1,1,1,1,1}; 
+		
+		int[] lottoNums = new int[6]; 
+		
+		boolean chkDup = true;
 		
 		
 		for(int i=0; i<lottoNums.length; i++) {
@@ -23,19 +27,19 @@ public class Ex08 {
 					if(i == j) {
 						continue;			
 					}else if(lottoNums[i] == lottoNums[j]) {
-						chkDup = false;
+						chkDup = true;
 						lottoNums[i] = (int)(Math.random()*45+1);
 						break;
 					}else {
-						chkDup = true;
+						chkDup = false;
 					}
 				}	
 					
-				if(chkDup == false) {
+				if(chkDup == true) {
 					break;
 				}
 			}
-			if(chkDup == true) {
+			if(chkDup == false) {
 				break;
 			}
 		}
