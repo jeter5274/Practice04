@@ -4,10 +4,10 @@ public class Ex08 {
 
 	public static void main(String[] args) {
 
-		//중복테스트
-		//int[] lottoNums = new int[] {1,1,1,1,1,1}; 
 		
 		int[] lottoNums = new int[6]; 
+		//중복테스트
+		//int[] lottoNums = new int[] {1,1,1,1,1,1};
 		
 		boolean chkDup = true;
 		
