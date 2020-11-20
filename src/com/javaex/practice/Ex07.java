@@ -34,6 +34,8 @@ public class Ex07 {
 			System.out.println(wonArray[i]+ "원 : " +kindWonArray[i]+ "개");
 		}
 		
+		sc.close();
+		
 	}
 
 }
